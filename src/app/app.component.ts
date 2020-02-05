@@ -24,7 +24,34 @@ export class AppComponent {
       price: 55000,
       description: 'Camisetas bordadas'
     },
-  
+    {
+      id: '3',
+      image: 'assets/img/Camis3.jpeg',
+      title: 'Camiseta',
+      price: 55000,
+      description: 'Camisetas bordadas'
+    },
+    {
+      id: '4',
+      image: 'assets/img/Camis4.jpeg',
+      title: 'Camiseta',
+      price: 55000,
+      description: 'Camisetas bordadas'
+    },
+    {
+      id: '5',
+      image: 'assets/img/Camis5.jpeg',
+      title: 'Camiseta',
+      price: 55000,
+      description: 'Camisetas bordadas'
+    },
+    {
+      id: '6',
+      image: 'assets/img/Camis6.jpeg',
+      title: 'Camiseta',
+      price: 55000,
+      description: 'Camisetas bordadas'
+    },
   ];
 
   clickProduct(id: number){
