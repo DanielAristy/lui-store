@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Product} from '../../model/product';
 import { from } from 'rxjs';
 
@@ -15,8 +15,12 @@ export class ProductComponent implements OnInit {
   }
   @Input() product: Product;
 
+  /**Creando un evento */
+  @Output() productClicked: EventEmitter<any> = new EventEmitter;
+
   addCar(){
     console.log('Agregar al carrito');
+    this.productClicked.emit(this.product.id);
   }
 
 }
